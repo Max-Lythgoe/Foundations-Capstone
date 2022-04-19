@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Maxed Out Music</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html"><img src="/Maxed-Out-Logo-White.png" alt="Maxed Out Music Logo" id="Main-Title" class="crumb"></a></li>
+                <li class="crumb" id="highlightNav"><a href="home.html" style="color: #fc34c7";>Home</a></li>
+                <li class="crumb"><a href="myplaylists.html">My Playlist</a></li>
+                <li class="crumb"><a href="about.html">About</a></li>
+                <li class="crumbTwo"><a href="https://www.spotify.com/us/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png"> </a></li>
+                <li class="crumbTwo"><a href="https://music.youtube.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Youtube_Music_icon.svg/2048px-Youtube_Music_icon.svg.png"> </a></li>
+                <li class="crumbTwo"><a href="https://www.apple.com/apple-music/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/ITunes_12.2_logo.png"> </a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h2>POPULAR PLAYLISTS</h2>
+    <div class="container-fluid">
+        <ol class="row">
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="pop" src="../Playlist-img/Pop_img.png" alt="pop playlist image"></a>
+                </li>
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="rock" src="../Playlist-img/Rock_img.png" alt="rock playlist image">
+                </li>
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="alt" src="../Playlist-img/Alt_img.png" alt="alt playlist image">
+            </li>
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="rap" src="../Playlist-img/Rap_img.png" alt="rap playlist image">
+            </li>
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="hip-hop" src="../Playlist-img/Hiphop_img.png" alt="hip-hop playlist image">
+                </li>
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="country" src="../Playlist-img/Country_img.png" alt="country playlist image">
+            </li>
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="classical" src="../Playlist-img/Classical_img.png" alt="classical playlist image">
+            </li>
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="edm" src="../Playlist-img/Edm_img.png" alt="edm playlist image">
+            </li>
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="jazz" src="../Playlist-img/Jazz_img.png" alt="jazz playlist image">
+            </li>
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="ambient" src="../Playlist-img/Ambient_img.png" alt="ambient playlist image">
+            </li>
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="dubstep" src="../Playlist-img/Dubstep_img.png" alt="dubstep playlist image">
+            </li>
+            <li class="col-xs-4 col-md-5 col-lg-3 mb-5 mx-auto mainLists">
+                <img class="img-fluid" id="chill" src="../Playlist-img/Chill_img.png" alt="chill playlist image">
+            </li>
+        </ol>
+    </div>
+    <hr style="width:75%; margin-left:auto; margin-right:auto;">
+    <div id="buttonContainer">
+        <a href="myplaylists.html">
+    <button id="pageButton">My Playlist</button>
+    </a>
+        <a href="home.html">
+    <button id="pageButton">Clear All</button>
+    </a>
+    </div>
+    <hr style="width:75%; margin-left:auto; margin-right:auto;">
+    <section id="playlistContainer"></section>
+    <div id="buttonContainer">
+        <button onclick="topFunction()" id="topButton" title="Go to top">^</button>
+    </div>
+    <footer>
+        <div id="footerContainer">
+        <h4>About</h4>
+        <p>Maxed Out Music is a great new tool for finding and creating your unique music playlist! Find songs sorted by genre or other playlists on the home page, create your own playlist on the "My Playlist" page, or watch a short demo if you need any further assistance on the "About" page. We seek to help you find music you'll love and create a playlist so you'll have it all in one place. Also located in the top right are links to popular streaming platforms for an easy way to quickly change up your playlist on your respective streaming platform.</p>
+        <hr>
+        <p>Copyright © 2022 All Fake Rights Reserved by Maxed Out Music </p>
+        </div>
+    </footer>
+    <script src="mainPlaylist.js"></script>  
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
