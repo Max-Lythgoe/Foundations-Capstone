@@ -141,6 +141,11 @@ img {
     width: 4vh;
 }
 
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Froms ================================================================================ */
 
 form {
@@ -162,7 +167,7 @@ form {
 }
 
 input:hover {
-    box-shadow: 0 0 5px #fc34c7, 0 0 5px yellow, 0 0 20px #fc34c7;
+    box-shadow: 0 0 10px #fc34c7, 0 0 5px yellow, 0 0 20px #fc34c7;
 }
 
 input[type='text'] {
