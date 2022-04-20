@@ -87,7 +87,6 @@ ul > li > .crumbTwo {
 }
 
 ol {
-    /* padding-left: auto; */
     margin-right: auto;
     display: flex;
     flex-direction: row;
@@ -160,6 +159,10 @@ form {
     border-top-right-radius:25px;  
     border-bottom-right-radius:25px;  
     border-bottom-left-radius:25px;
+}
+
+input:hover {
+    box-shadow: 0 0 5px #fc34c7, 0 0 5px yellow, 0 0 20px #fc34c7;
 }
 
 input[type='text'] {
